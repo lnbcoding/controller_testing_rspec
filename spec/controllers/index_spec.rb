@@ -1,32 +1,32 @@
 require 'spec_helper'
 
 describe 'GET /gadgets' do
-  it "should display all widgets" do; end
+  it "should display all widgets"
 end
 
 describe 'POST /gadgets' do
-  it "should create a new gadget" do; end
-  it "should redirect the user to the /gadgets route" do; end
+  it "creates a new gadget"
+  it "redirects the user to the /gadgets route"
   
-  describe "if the new gadget does not have a body" do
-    it "should not create a new gadget" do; end
-    it "should return a status code of 422" do; end
+  context "when the new gadget does not have a body" do
+    it "does not create a new gadget"
+    it "returns a status code of 422"
   end
 
-  describe "if the new gadget would not be unique" do
-    it "should not create a new gadget" do; end
-    it "should return a status code of 422" do; end
+  context "when the new gadget would not be unique" do
+    it "does not create a new gadget"
+    it "returns a status code of 422"
   end
 end
 
 describe 'GET /widgets' do
-  describe "when a user is not logged in" do
-    it "should display all widgets" do; end
+  context "when a user is not logged in" do
+    it "displays all widgets"
   end
 
-  describe "when a user is logged in" do
-    it "should display all of the given user's widgets" do; end
-    it "should not display other users' widgets" do; end
+  context "when a user is logged in" do
+    it "displays all of the given user's widgets"
+    it "does not display other users' widgets"
   end
 end
 
