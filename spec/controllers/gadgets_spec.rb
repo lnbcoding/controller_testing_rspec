@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'GET /gadgets' do
-  it "should display all widgets"
+  it "should display all gadgets"
 end
 
 describe 'POST /gadgets' do
